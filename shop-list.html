@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Simple Javascript Shopping List
+    </title>
+    <link href="shop-list.css" rel="stylesheet">
+    <script src="shop-list.js"></script>
+  </head>
+  <body>
+    <h1>SHOPPING LIST</h1>
+    <div id="shop-wrap">
+      <!-- (A) ADD NEW ITEM -->
+      <form id="shop-form">
+        <input type="text" id="shop-item" placeholder="Item Name" required disabled/>
+        <input type="submit" id="shop-add" value="Add" disabled/>
+      </form>
+
+      <!-- (B) SHOPPING LIST -->
+      <div id="shop-list"></div>
+    </div>
+  </body>
+</html>
