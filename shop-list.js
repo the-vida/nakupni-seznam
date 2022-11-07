@@ -50,7 +50,7 @@ var slist = {
   },
 
   // (D) DELETE SELECTED ITEM
-  delete : (id) => { if (confirm("Remove this item?")) {
+  delete : (id) => { if (confirm("Odebrat tuhle položku?")) {
     slist.items.splice(id, 1);
     slist.save();
     slist.draw();
@@ -92,7 +92,7 @@ var slist = {
         let del = document.createElement("input");
         del.className = "item-del";
         del.type = "button";
-        del.value = "Delete";;
+        del.value = "Smazat";;
         del.onclick = () => { slist.delete(i); };
         row.appendChild(del);
 
@@ -100,7 +100,7 @@ var slist = {
         let ok = document.createElement("input");
         ok.className = "item-ok";
         ok.type = "button";
-        ok.value = slist.items[i].done ? "Not Yet" : "Got It";
+        ok.value = slist.items[i].done ? "Vrátit změnu" : "Hotovo";
         ok.onclick = () => { slist.toggle(i); };
         row.appendChild(ok);
       }
