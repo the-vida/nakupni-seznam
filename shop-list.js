@@ -70,7 +70,7 @@ var slist = {
 
     // (F2) NO ITEMS
     if (slist.items.length == 0) {
-      slist.hlist.innerHTML = "<div class='item-row item-name'>No items found.</div>";
+      slist.hlist.innerHTML = "<div class='item-row item-name'>Žádné položky.</div>";
     }
 
     // (F3) DRAW ITEMS
